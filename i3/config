@@ -31,6 +31,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec terminology
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -170,6 +171,9 @@ bar {
 
 #mouse settings for xorg
 exec_always xset m 0
+
+#mouse focus
+focus_follows_mouse no
 
 #startup applications
 exec --no-startup-id dropbox start
