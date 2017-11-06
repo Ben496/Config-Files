@@ -1,5 +1,5 @@
-*foreground: #00cc00
-*foreground_bold: #a8a19f
+*foreground: 005f87
+*foreground_bold: #5f0087
 *cursor: #a8a19f
 *background:       #1b1918
 !!*background: rgba(0, 0, 0, .7)
