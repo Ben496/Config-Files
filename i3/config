@@ -167,7 +167,7 @@ exec --no-startup-id dropbox start
 exec ~/pia.sh
 
 #temporary hack to determine focused window
-exec_always --no-startup-id compton --inactive-dim 0.15 --vsync opengl
+exec --no-startup-id compton --inactive-dim 0.15 --vsync opengl
 
 #background
 #source: https://www.reddit.com/r/EarthPorn/comments/7au8vr/lake_wakatipu_near_queenstown_new_zealand_at/
