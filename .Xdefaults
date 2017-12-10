@@ -1,33 +1,40 @@
-*foreground: 005f87
-*foreground_bold: #5f0087
-*cursor: #a8a19f
-*background:       #1b1918
-!!*background: rgba(0, 0, 0, .7)
+! special
+*.foreground:   #d2c5bc
+*.background:   #090f14
+*.cursorColor:  #d2c5bc
 
-!! black
-*color0: #1b1918
-*color8: #766e6b
-!! red
-*color1: #f22c40
-*color9: #f22c40
-!! green
-*color2: #5ab738
-*color10: #5ab738
-!! yellow
-*color3: #d5911a
-*color11: #d5911a
-!! blue
-*color4: #407ee7
-*color12: #407ee7
-!! magenta
-*color5: #6666ea
-*color13: #6666ea
-!! cyan
-*color6: #00ad9c
-*color14: #00ad9c
-!! white
-*color7: #a8a19f
-*color15: #f1efee
+! black
+*.color0:       #202020
+*.color8:       #606060
+
+! red
+*.color1:       #6b1515
+*.color9:       #cb425b
+
+! green
+*.color2:       #359f1b
+*.color10:      #72b23f
+
+! yellow
+*.color3:       #d7f18d
+*.color11:      #d79b50
+
+! blue
+*.color4:       #356579
+*.color12:      #7491a1
+
+! magenta
+*.color5:       #2d2031
+*.color13:      #87314e
+
+! cyan
+*.color6:       #0b3452
+*.color14:      #0f829d
+
+! white
+*.color7:       #646b65
+*.color15:      #3c5e4d
+
 
 URxvt.intensityStyles:	false
 !!URxvt.background:       [70]#000000
@@ -43,17 +50,3 @@ URxvt.resize-font.smaller:	C-Down
 URxvt.resize-font.bigger:	C-Up
 URxvt.transparent:	true
 URxvt.shading:		20
-
-URxvt.colorUL:		#4682B4
-rofi.color-enabled:	true
-rofi.color-window:	#000, #000, #000
-rofi.color-normal:	#111, #819396, #222, #008ed4, #ffffff
-rofi.color-active:	#002b37, #008ed4, #003643, #008ed4, #66c6ff
-rofi.color-urgent:	#002b37, #da4281, #003643, #008ed4, #890661
-
-rofi.fake-transparency:	true
-rofi.lines:		3
-rofi.bw:		0
-rofi.opacity:		"10"
-rofi.hide-scrollbar:	true
-rofi.width:		30
