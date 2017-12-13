@@ -183,4 +183,4 @@ exec --no-startup-id compton --inactive-dim 0.15 --vsync opengl
 
 #background
 #source: https://www.reddit.com/r/EarthPorn/comments/7au8vr/lake_wakatipu_near_queenstown_new_zealand_at/
-exec_always feh --bg-scale ~/.config/i3/7ei6m5t9q1wz.jpg
+exec_always --no-startup-id feh --bg-scale ~/.config/i3/7ei6m5t9q1wz.jpg
