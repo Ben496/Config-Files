@@ -166,7 +166,7 @@ bindsym $mod+Shift+o move workspace to output right
 #}
 
 #exec_always --no-startup-id pkill polybar
-exec_always --no-startup-id pkill polybar && polybar example
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #mouse settings for xorg
 exec_always xset m 0
