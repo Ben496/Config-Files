@@ -1,6 +1,10 @@
-// Settings in here override those in "Default/Preferences.sublime-settings",
-// and are overridden in turn by syntax-specific settings.
 {
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Tomorrow.tmTheme",
 	"highlight_line": true,
-	"hot_exit": false
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Boxy Tomorrow.sublime-theme"
 }
