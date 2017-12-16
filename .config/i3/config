@@ -166,10 +166,11 @@ bindsym $mod+Shift+o move workspace to output right
 #}
 
 # mouse settings for xorg
-exec_always xset m 0
+exec_always --no-startup-id xset m 0
+exec_always --no-startup-id xset s noblank
 
 # for better readability on 15" 4k displays
-exec_always xrandr --output eDP1 --scale 0.75x0.75
+#exec_always xrandr --output eDP1 --scale 0.75x0.75
 
 # mouse focus
 focus_follows_mouse no
