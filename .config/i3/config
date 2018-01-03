@@ -47,6 +47,9 @@ focus_follows_mouse no
 set $mod Mod4
 #set $mod Mod1
 
+# set terminal
+set $term termite
+
 # vim directional keys
 set $up k
 set $down j
@@ -193,6 +196,7 @@ exec --no-startup-id ksuperkey -e 'Super_L=Alt_L|F1'
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id al-conky-session
 exec --no-startup-id /usr/bin/lxpolkit
+exec --no-startup-id $term -t "Scratch"
 
 
 ####################################################################################################
@@ -202,9 +206,12 @@ exec --no-startup-id /usr/bin/lxpolkit
 # bindsym $mod+e exec --no-startup-id al-open -edit
 bindsym Control+space exec --no-startup-id rofi-apps
 bindsym $mod+d exec --no-startup-id $HOME/bin/rofi-gorice
-bindsym $mod+Return exec --no-startup-id exo-open --launch TerminalEmulator
+bindsym $mod+Return exec --no-startup-id $term
 bindsym $mod+Shift+w exec --no-startup-id exo-open --launch WebBrowser
 bindsym $mod+Shift+f exec --no-startup-id exo-open --launch FileManager
+
+bindsym $mod+Ctrl+t exec --no-startup-id $term -t "Scratch"
+bindsym $mod+t [title="Scratch"] scratchpad show
 
 # good example for long command being broken into multiple lines (i3 is fine with this using "\")
 bindsym Print exec --no-startup-id "scrot '%S.png' \
@@ -218,15 +225,7 @@ bindsym Print exec --no-startup-id "scrot '%S.png' \
 for_window [class="qt5ct|Lxappearance|^Gpick$|Pamac|Peek|Nitrogen"] floating enable
 for_window [window_role="^Preferences$"] floating enable
 for_window [class="Nemo"] floating enable resize set 1200 1000
-
-for_window [class="Termite|^Thunar|Geany|Firefox"] focus
-
-# Assign Applications to specific workspace
-# get class with xprop
-# assign [class="Firefox"]                      → 1
-# assign [class="Geany"]                        → 2
-# assign [class="Thunar"]                       → 3
-# assign [class="^Gimp"]                        → 4
+for_window [title="Scratch"] floating enable, move scratchpad, scratchpad hide
 
 ####################################################################################################
 #################                          audio settings                          #################
