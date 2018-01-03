@@ -226,6 +226,7 @@ for_window [class="qt5ct|Lxappearance|^Gpick$|Pamac|Peek|Nitrogen"] floating ena
 for_window [window_role="^Preferences$"] floating enable
 for_window [class="Nemo"] floating enable resize set 1200 1000
 for_window [title="Scratch"] floating enable, move scratchpad, scratchpad hide
+for_window [instance="calibre-gui" class="calibre"] floating enable
 
 ####################################################################################################
 #################                          audio settings                          #################
