@@ -111,6 +111,9 @@ bindsym $mod+Shift+q kill
 
 # Container/window control
 
+# Toggle fullscreen
+bindsym $mod+f fullscreen toggle
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
