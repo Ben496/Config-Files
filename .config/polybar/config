@@ -43,7 +43,7 @@ inherit = bar/master
 ; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
 monitor = DP-0
 
-modules-left = config i3-workspaces menu
+modules-left = i3-workspaces menu
 modules-center = clock
 modules-right = pkg memory temperature coreuse network volume
 
@@ -52,7 +52,7 @@ modules-right = pkg memory temperature coreuse network volume
 ; pkg keyboard memory temperature coreuse network clock volume i3-workspaces workspaces window_switch
 
 
-;;;;;; Tray is commented out ;;;;;;;;
+; Tray
 tray-position = right
 tray-padding = 0
 tray-background = ${colors.background}
