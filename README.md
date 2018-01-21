@@ -8,6 +8,7 @@ My configuration files for various applications for easy access from any machine
 * rofi
 * compton
 * termite
+* xfce4-screenshoot
 
 ### Other Applications
 * vim

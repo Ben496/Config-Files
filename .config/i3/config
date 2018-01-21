@@ -211,11 +211,14 @@ bindsym $mod+Shift+f exec --no-startup-id exo-open --launch FileManager
 bindsym $mod+Ctrl+t exec --no-startup-id $term -t "Scratch"
 bindsym $mod+t [class="Termite" title="Scratch"] scratchpad show
 
-# good example for long command being broken into multiple lines (i3 is fine with this using "\")
-bindsym Print exec --no-startup-id "scrot '%S.png' \
--e 'mv $f $$(xdg-user-dir PICTURES)/ArchLabs-%S-$wx$h.png \
-; gpicview $$(xdg-user-dir PICTURES)/ArchLabs-%S-$wx$h.png'"
-
+# screenshots
+bindsym Print exec --no-startup-id xfce4-screenshooter -f
+bindsym Mod1+Print exec --no-startup-id xfce4-screenshooter -w
+bindsym Shift+Print exec --no-startup-id xfce4-screenshooter -r
+# unused keybinds to copy screenshot to clipboard
+#bindsym Ctrl+Print exec --no-startup-id xfce4-screenshooter -fc
+#bindsym Ctrl+mod1+Print exec --no-startup-id xfce4-screenshooter -wc
+#bindsym Ctrl+Shift+Print exec --no-startup-id xfce4-screenshooter -rc
 
 
 # X11 settings
