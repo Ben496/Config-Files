@@ -45,7 +45,7 @@ monitor = DP-0
 
 modules-left = i3-workspaces menu
 modules-center = clock
-modules-right = pkg memory temperature coreuse network volume
+modules-right = pkg memory temperature coreuse
 
 ; All available modules (some require configuration in modules.conf)
 ; redshift github filesystem mpd wired-network wireless-network battery menu volume-bar bspwm
