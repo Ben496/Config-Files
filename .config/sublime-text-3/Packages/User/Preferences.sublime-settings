@@ -6,9 +6,9 @@
 	[
 		"Vintage"
 	],
-	"theme": "Boxy Tomorrow.sublime-theme",
-	"rulers": 
+	"rulers":
 	[
 		80
-	]
+	],
+	"theme": "Boxy Tomorrow.sublime-theme"
 }
