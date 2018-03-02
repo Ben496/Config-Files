@@ -246,6 +246,7 @@ for_window [class="Termite" title="Scratch"] floating enable, move scratchpad, s
 for_window [instance="calibre-gui" class="calibre"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Eom"] floating enable
+for_window [class="Transmission-gtk"] floating enable
 
 
 
