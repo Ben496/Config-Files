@@ -216,13 +216,10 @@ bindsym $mod+Ctrl+t exec --no-startup-id $term -t "Scratch"
 bindsym $mod+t [class="Termite" title="Scratch"] scratchpad show
 
 # screenshots
-bindsym Print exec --no-startup-id xfce4-screenshooter -f
-bindsym Mod1+Print exec --no-startup-id xfce4-screenshooter -w
-bindsym Shift+Print exec --no-startup-id xfce4-screenshooter -r
-# unused keybinds to copy screenshot to clipboard
-#bindsym Ctrl+Print exec --no-startup-id xfce4-screenshooter -fc
-#bindsym Ctrl+mod1+Print exec --no-startup-id xfce4-screenshooter -wc
-#bindsym Ctrl+Shift+Print exec --no-startup-id xfce4-screenshooter -rc
+bindsym Print exec --no-startup-id spectacle -m
+#bindsym Mod1+Print exec --no-startup-id spectacle -a
+bindsym Control+Print exec --no-startup-id spectacle -a
+bindsym Shift+Print exec --no-startup-id spectacle -r
 
 
 # X11 settings
