@@ -6,7 +6,7 @@
 	"installed_packages":
 	[
 		"Boxy Theme",
-		"ClangAutoComplete",
+		"EasyClangComplete",
 		"Package Control",
 		"Prolog",
 		"SublimeAStyleFormatter",
