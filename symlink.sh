@@ -25,3 +25,7 @@ ln -sv $(pwd)/.config/sublime-text-3/Packages/User/Preferences.sublime-settings 
 # compton
 rm ~/.config/compton.conf
 ln -sv $(pwd)/.config/compton.conf ~/.config/compton.conf
+
+# termite
+rm -r ~/.config/termite
+ln -sv $(pwd)/.config/termite ~/.config/termite
