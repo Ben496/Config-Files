@@ -29,3 +29,7 @@ ln -sv $(pwd)/.config/compton.conf ~/.config/compton.conf
 # termite
 rm -r ~/.config/termite
 ln -sv $(pwd)/.config/termite ~/.config/termite
+
+# zsh
+rm -r ~/.zshrc
+ln -sv $(pwd)/.zshrc ~/.zshrc
