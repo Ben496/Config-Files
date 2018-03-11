@@ -31,5 +31,5 @@ rm -r ~/.config/termite
 ln -sv $(pwd)/.config/termite ~/.config/termite
 
 # zsh
-rm -r ~/.zshrc
+rm ~/.zshrc
 ln -sv $(pwd)/.zshrc ~/.zshrc
