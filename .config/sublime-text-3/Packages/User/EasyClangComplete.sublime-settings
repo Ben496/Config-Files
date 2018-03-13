@@ -1,0 +1,7 @@
+{
+	"cpp_flags": ["-std=c++17"],
+	"common_flags": [
+		"-Wall"
+	],
+	"max_cache_age": "00:05:00"
+}

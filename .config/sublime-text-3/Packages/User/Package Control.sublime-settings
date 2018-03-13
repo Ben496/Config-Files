@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"Boxy Theme",
+		"CMake",
 		"EasyClangComplete",
 		"Package Control",
 		"Prolog",
