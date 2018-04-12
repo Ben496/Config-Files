@@ -231,6 +231,8 @@ exec_always --no-startup-id xsetwacom --set "Wacom Intuos PT M 2 Pen stylus" Map
 # other settings
 exec_always --no-startup-id numlockx on
 exec_always --no-startup-id xset m 0
+exec_always --no-startup-id xset s off
+exec_always --no-startup-id xset -dpms
 
 
 
