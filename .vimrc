@@ -39,7 +39,7 @@ syntax on
 colorscheme default
 set cursorline
 set colorcolumn=80
-highlight colorcolumn ctermbg=blue
+highlight colorcolumn ctermbg=black
 highlight cursorline cterm=NONE ctermbg=black ctermfg=darkred
 
 " Custom Keybinds
