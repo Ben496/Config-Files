@@ -15,6 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'idanarye/vim-vebugger'
+Plugin 'unblevable/quick-scope'
 
 " Python2 path
 let g:ycm_path_to_python_interpreter = '/usr/bin/python2'
