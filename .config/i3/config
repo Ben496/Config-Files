@@ -14,12 +14,12 @@
 # Style settings
 
 # Window colors
-set $border-color     #2b303b
-set $background-color #2b303b
+set $border-color     #071F2B
+set $background-color #071F2B
 set $inactive-color   #65737e
 set $text-color       #8fa1b3
-set $urgent-color     #bf616a
-set $active-color     #b48ead
+set $urgent-color     #ff301d
+set $active-color     #0096C6
 
 # class                  background     border         text           indicator
 client.focused           $border-color  $active-color  $text-color    $inactive-color
