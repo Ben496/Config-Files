@@ -207,8 +207,9 @@ exec --no-startup-id nm-applet
 
 # bindsym $mod+e exec --no-startup-id al-open -edit
 # bindsym Control+space exec --no-startup-id rofi-apps
-#bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+d exec --no-startup-id $HOME/bin/rofi-gorice
+bindsym Mod1+d exec --no-startup-id dmenu_run
+#bindsym $mod+d exec --no-startup-id $HOME/bin/rofi-gorice
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
 bindsym $mod+Return exec --no-startup-id $term
 bindsym $mod+Shift+w exec --no-startup-id chromium
 bindsym $mod+Shift+f exec --no-startup-id nemo
