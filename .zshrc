@@ -103,7 +103,7 @@ export LD_LIBRARY_PATH=/usr/local/gcc-8/lib64:$LD_LIBRARY_PATH
 
 # Custom gdb
 export PATH=/usr/local/gdb-8/bin:$PATH
-export LD_LIBRARY_PATH/usr/local/gdb-8/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/usr/local/gdb-8/lib:$LD_LIBRARY_PATH
 
 # Aliases
 alias cmake8="cmake -D CMAKE_C_COMPILER=gcc-8 -D CMAKE_CXX_COMPILER=g++-8"
