@@ -11,6 +11,7 @@
 	[
 		80
 	],
+	"font_face": "Source Code Pro for Powerline",
 	"tab_size": 8,
 	"theme": "Boxy Tomorrow.sublime-theme"
 }
