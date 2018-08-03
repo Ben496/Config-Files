@@ -14,25 +14,18 @@
 # Style settings
 
 # Window colors
-set $border-color     #071F2B
-set $background-color #071F2B
-set $inactive-color   #65737e
-set $text-color       #8fa1b3
-set $urgent-color     #ff301d
-set $active-color     #0096C6
+#set $border-color     #071F2B
+#set $background-color #071F2B
+#set $inactive-color   #65737e
+#set $text-color       #8fa1b3
+#set $urgent-color     #ff301d
+#set $active-color     #0096C6
 
 # class                  background     border         text           indicator
-client.focused           $border-color  $active-color  $text-color    $inactive-color
-client.unfocused         $border-color  $border-color  $text-color    $border-color
-client.focused_inactive  $border-color  $border-color  $text-color    $border-color
-client.urgent            $border-color  $urgent-color  $urgent-color  $border-color
-
-# border
-for_window [class="^.*"] border pixel 3
-
-# gaps
-gaps inner 12
-gaps outer 0
+#client.focused           $border-color  $active-color  $text-color    $inactive-color
+#client.unfocused         $border-color  $border-color  $text-color    $border-color
+#client.focused_inactive  $border-color  $border-color  $text-color    $border-color
+#client.urgent            $border-color  $urgent-color  $urgent-color  $border-color
 
 # window focus
 focus_follows_mouse no
@@ -46,7 +39,7 @@ set $mod Mod4
 #set $mod Mod1
 
 # set terminal
-set $term termite
+set $term gnome-terminal
 
 # vim directional keys
 set $up k
@@ -187,7 +180,7 @@ bindsym $mod+a focus parent
 #exec_always --no-startup-id $HOME/.config/i3/scripts/compositor.sh
 #exec_always --no-startup-id $HOME/.config/polybar/scripts/launch-polybar
 exec_always --no-startup-id killall -q compton; compton
-exec_always --no-startup-id killall -q polybar; polybar i3-bar
+#exec_always --no-startup-id killall -q polybar; polybar i3-bar
 exec_always --no-startup-id skippy-xd --start-daemon --config $HOME/.config/skippy-xd/skippy-xd.rc
 exec_always --no-startup-id dropbox start
 #exec_always --no-startup-id transmission-gtk
@@ -198,8 +191,18 @@ exec --no-startup-id ksuperkey -e 'Super_L=Alt_L|F1'
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id al-conky-session
 exec --no-startup-id /usr/bin/lxpolkit
-exec --no-startup-id $term -t "Scratch"
+#exec --no-startup-id $term -t "Scratch"
 exec --no-startup-id nm-applet
+exec --no-startup-id /home/ben/pia.sh
+
+# authentication
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+
+# create bar
+bar {
+        status_command i3status
+	tray_output DP-0
+}
 
 
 
@@ -211,11 +214,11 @@ bindsym Mod1+d exec --no-startup-id dmenu_run
 #bindsym $mod+d exec --no-startup-id $HOME/bin/rofi-gorice
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
 bindsym $mod+Return exec --no-startup-id $term
-bindsym $mod+Shift+w exec --no-startup-id chromium
+bindsym $mod+Shift+w exec --no-startup-id firefox
 bindsym $mod+Shift+f exec --no-startup-id nemo
 
-bindsym $mod+Ctrl+t exec --no-startup-id $term -t "Scratch"
-bindsym $mod+t [class="Termite" title="Scratch"] scratchpad show
+#bindsym $mod+Ctrl+t exec --no-startup-id $term -t "Scratch"
+#bindsym $mod+t [class="Termite" title="Scratch"] scratchpad show
 
 # screenshots
 bindsym Print exec --no-startup-id spectacle -m
@@ -242,12 +245,12 @@ exec_always --no-startup-id xset -dpms
 
 for_window [class="qt5ct|Lxappearance|^Gpick$|Pamac|Peek|Nitrogen"] floating enable
 for_window [window_role="^Preferences$"] floating enable
-for_window [class="Nemo"] floating enable
-for_window [class="Termite" title="Scratch"] floating enable, move scratchpad, scratchpad hide
-for_window [instance="calibre-gui" class="calibre"] floating enable
-for_window [class="Pavucontrol"] floating enable
+#for_window [class="Nemo"] floating enable
+#for_window [class="Termite" title="Scratch"] floating enable, move scratchpad, scratchpad hide
+#for_window [instance="calibre-gui" class="calibre"] floating enable
+#for_window [class="Pavucontrol"] floating enable
 for_window [class="Eom"] floating enable
-for_window [class="Transmission-gtk"] floating enable
+#for_window [class="Transmission-gtk"] floating enable
 
 
 
@@ -293,18 +296,5 @@ mode "$mode_system" {
     bindsym r exec --no-startup-id ~/.config/i3/scripts/i3exit.sh shutdown, mode "default"
     bindsym Return mode "default"
     bindsym Escape mode "default"
-}
-
-
-
-# i3 gaps change
-
-set $mode_gaps Gap Size     +  |  -  
-bindsym $mod+Shift+g mode "$mode_gaps"
-mode "$mode_gaps" {
-  bindsym plus  gaps inner all plus 2
-  bindsym minus gaps inner all minus 2
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
 }
 
