@@ -39,7 +39,7 @@ set $mod Mod4
 #set $mod Mod1
 
 # set terminal
-set $term gnome-terminal
+set $term termite
 
 # vim directional keys
 set $up k
@@ -190,13 +190,13 @@ exec --no-startup-id xfsettingsd &
 exec --no-startup-id ksuperkey -e 'Super_L=Alt_L|F1'
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id al-conky-session
-exec --no-startup-id /usr/bin/lxpolkit
+#exec --no-startup-id /usr/bin/lxpolkit
 #exec --no-startup-id $term -t "Scratch"
 exec --no-startup-id nm-applet
 exec --no-startup-id /home/ben/pia.sh
 
 # authentication
-exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # create bar
 bar {
