@@ -2,5 +2,6 @@
 	"common_flags": [
 		"-Wall"
 	],
-	"max_cache_age": "00:05:00"
+	"max_cache_age": "00:05:00",
+	"use_libclang": false
 }
