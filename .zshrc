@@ -107,3 +107,11 @@ export LD_LIBRARY_PATH=/usr/local/gdb-8/lib:$LD_LIBRARY_PATH
 
 # Aliases
 alias cmake8="cmake -D CMAKE_C_COMPILER=gcc-8 -D CMAKE_CXX_COMPILER=g++-8"
+
+# ssh-agent
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent > ~/.ssh-agent-thing
+fi
+if [[ "$SSH_AGENT_PID" == "" ]]; then
+    eval "$(<~/.ssh-agent-thing)"
+fi
