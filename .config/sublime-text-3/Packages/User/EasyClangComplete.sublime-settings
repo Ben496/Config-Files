@@ -3,5 +3,6 @@
 		"-Wall"
 	],
 	"max_cache_age": "00:05:00",
-	"use_libclang": false
+	"use_libclang": false,
+	"show_type_info": false
 }
