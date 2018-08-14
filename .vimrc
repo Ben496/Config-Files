@@ -31,7 +31,7 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " My options
-inoremap jk <ESC>
+" inoremap jk <ESC>
 set smartindent
 set number
 set relativenumber
