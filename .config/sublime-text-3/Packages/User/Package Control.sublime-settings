@@ -10,9 +10,11 @@
 		"CMake",
 		"EasyClangComplete",
 		"MarkdownLivePreview",
+		"OpenGL Shading Language (GLSL)",
 		"Package Control",
 		"Prolog",
 		"SublimeAStyleFormatter",
-		"SublimeGDB"
+		"SublimeGDB",
+		"Vintageous"
 	]
 }
