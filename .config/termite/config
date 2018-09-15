@@ -26,11 +26,11 @@ filter_unmatched_urls = true
 foreground      = #c0c5ce
 foreground_bold = #c0c5ce
 cursor          = #c0c5ce
-background      = #0f0d27
+background      = #000000
 
 # black
-color0  = #2a50a3
-color8  = #346891
+color0  = #202225
+color8  = #202225
 
 # red
 color1  = #bf616a
@@ -59,4 +59,3 @@ color14 = #96b5b4
 # white
 color7  = #f6f6f6
 color15 = #c0c5ce
-
