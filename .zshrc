@@ -61,6 +61,7 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -94,6 +95,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Aliases
+#alias cmake8="cmake -D CMAKE_C_COMPILER=gcc-8 -D CMAKE_CXX_COMPILER=g++-8"
+alias subl="/opt/sublime_text/sublime_text"
+
 # History
 setopt nosharehistory
 
@@ -104,9 +109,6 @@ export LD_LIBRARY_PATH=/usr/local/gcc-8/lib64:$LD_LIBRARY_PATH
 # Custom gdb
 export PATH=/usr/local/gdb-8/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/gdb-8/lib:$LD_LIBRARY_PATH
-
-# Aliases
-#alias cmake8="cmake -D CMAKE_C_COMPILER=gcc-8 -D CMAKE_CXX_COMPILER=g++-8"
 
 # ssh-agent
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
