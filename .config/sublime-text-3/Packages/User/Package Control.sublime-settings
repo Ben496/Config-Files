@@ -8,12 +8,15 @@
 		"A File Icon",
 		"Boxy Theme",
 		"CMake",
+		"ColorPicker",
 		"EasyClangComplete",
 		"MarkdownLivePreview",
 		"OpenGL Shading Language (GLSL)",
 		"Package Control",
 		"Prolog",
+		"Select Quoted",
 		"SublimeAStyleFormatter",
-		"SublimeGDB"
+		"SublimeGDB",
+		"Terminal"
 	]
 }
