@@ -181,7 +181,7 @@ bindsym $mod+a focus parent
 # scripts & settings
 #exec_always --no-startup-id $HOME/.config/i3/scripts/compositor.sh
 #exec_always --no-startup-id $HOME/.config/polybar/scripts/launch-polybar
-exec_always --no-startup-id killall -q compton; compton
+#exec_always --no-startup-id killall -q compton; compton
 #exec_always --no-startup-id killall -q polybar; polybar i3-bar
 exec_always --no-startup-id skippy-xd --start-daemon --config $HOME/.config/skippy-xd/skippy-xd.rc
 exec_always --no-startup-id dropbox start
@@ -190,12 +190,12 @@ exec_always --no-startup-id dropbox start
 # run once at startup
 exec --no-startup-id xfsettingsd &
 exec --no-startup-id ksuperkey -e 'Super_L=Alt_L|F1'
-exec --no-startup-id nitrogen --restore
+#exec --no-startup-id nitrogen --restore
 exec --no-startup-id al-conky-session
 #exec --no-startup-id /usr/bin/lxpolkit
 #exec --no-startup-id $term -t "Scratch"
 exec --no-startup-id nm-applet
-exec --no-startup-id /home/ben/pia.sh
+#exec --no-startup-id /home/ben/pia.sh
 
 # authentication
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
