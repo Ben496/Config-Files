@@ -35,3 +35,7 @@ ln -sv $(pwd)/.config/termite ~/.config/termite
 # zsh
 rm ~/.zshrc
 ln -sv $(pwd)/.zshrc ~/.zshrc
+
+# alacritty
+rm -r ~/.config/alacritty
+ln -sv $(pwd)/.config/alacritty ~/.config/alacritty

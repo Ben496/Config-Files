@@ -41,7 +41,7 @@ set $mod Mod4
 #set $mod Mod1
 
 # set terminal
-set $term termite
+set $term alacritty
 
 # vim directional keys
 set $up k
