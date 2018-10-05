@@ -190,7 +190,7 @@ exec_always --no-startup-id dropbox start
 # run once at startup
 exec --no-startup-id xfsettingsd &
 exec --no-startup-id ksuperkey -e 'Super_L=Alt_L|F1'
-#exec --no-startup-id nitrogen --restore
+exec --no-startup-id nitrogen --restore
 exec --no-startup-id al-conky-session
 #exec --no-startup-id /usr/bin/lxpolkit
 #exec --no-startup-id $term -t "Scratch"
