@@ -10,6 +10,10 @@ ln -sv $(pwd)/.vimrc ~/.vimrc
 rm -r ~/.config/i3
 ln -sv $(pwd)/.config/i3 ~/.config/
 
+# i3blocks
+rm -r ~/.config/i3blocks
+ln -sv $(pwd)/.config/i3blocks ~/.config/
+
 # polybar
 rm -r ~/.config/polybar
 ln -sv $(pwd)/.config/polybar ~/.config/
