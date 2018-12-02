@@ -27,6 +27,8 @@ rm ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 ln -sv $(pwd)/.config/sublime-text-3/Packages/User/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 rm ~/.config/sublime-text-3/Packages/User/EasyClangComplete.sublime-settings
 ln -sv $(pwd)/.config/sublime-text-3/Packages/User/EasyClangComplete.sublime-settings ~/.config/sublime-text-3/Packages/User/EasyClangComplete.sublime-settings
+rm ~/.config/sublime-text-3/Packages/User/Terminal\ \(Linux\).sublime-settings
+ln -sv $(pwd)/.config/sublime-text-3/Packages/User/Terminal\ \(Linux\).sublime-settings ~/.config/sublime-text-3/Packages/User/Terminal\ \(Linux\).sublime-settings
 
 # compton
 rm ~/.config/compton.conf
