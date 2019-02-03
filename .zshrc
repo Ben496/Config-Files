@@ -111,3 +111,6 @@ export LD_LIBRARY_PATH=/usr/local/gcc-8/lib64:$LD_LIBRARY_PATH
 export PATH=/usr/local/gdb-8/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/gdb-8/lib:$LD_LIBRARY_PATH
 
+# android-tools
+export PATH=~/Android/Sdk/platform-tools:$PATH
+
