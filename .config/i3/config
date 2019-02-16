@@ -191,7 +191,8 @@ exec_always --no-startup-id dropbox start
 exec --no-startup-id xfsettingsd &
 exec --no-startup-id ksuperkey -e 'Super_L=Alt_L|F1'
 exec --no-startup-id xrandr --auto
-exec --no-startup-id nitrogen --restore
+exec --no-startup-id sleep 1; xrandr --output HDMI3 --pos 0x780 --output DP-0 --pos 1920x480 --output DP-2 --pos 4480x0; nitrogen --restore
+#exec --no-startup-id nitrogen --restore
 exec --no-startup-id al-conky-session
 #exec --no-startup-id /usr/bin/lxpolkit
 #exec --no-startup-id $term -t "Scratch"
