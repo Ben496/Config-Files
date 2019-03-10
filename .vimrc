@@ -17,6 +17,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'idanarye/vim-vebugger'
 Plugin 'unblevable/quick-scope'
 Plugin 'rust-lang/rust.vim'
+Plugin 'tpope/vim-sleuth'
+Plugin 'airblade/vim-gitgutter'
 
 " Python2 path
 let g:ycm_path_to_python_interpreter = '/usr/bin/python2'
@@ -43,6 +45,7 @@ set colorcolumn=80
 highlight colorcolumn ctermbg=black
 highlight cursorline cterm=NONE ctermbg=black ctermfg=darkred
 let NERDTreeShowHidden=1 " Show dotfiles in NERDTree
+let g:gitgutter_enabled = 1
 
 " Custom Keybinds
 map <C-n> :NERDTreeToggle<CR>
