@@ -6,6 +6,10 @@
 rm ~/.vimrc
 ln -sv $(pwd)/.vimrc ~/.vimrc
 
+# neovim
+rm -r ~/.config/nvim
+ln -sv $(pwd)/.config/nvim ~/.config/
+
 # i3
 rm -r ~/.config/i3
 ln -sv $(pwd)/.config/i3 ~/.config/
