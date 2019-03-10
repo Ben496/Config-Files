@@ -1,2 +1,5 @@
-#ignore vim swap files
+# ignore vim swap files
 *.swp
+
+# ignore .vim folder in .config/nvim/
+.config/nvim/.vim
