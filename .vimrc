@@ -50,3 +50,10 @@ let g:gitgutter_enabled = 1
 
 " Custom Keybinds
 map <C-n> :NERDTreeToggle<CR>
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
