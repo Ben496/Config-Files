@@ -10,10 +10,13 @@
 		"Vintage",
 		"Vintageous"
 	],
+	"neovintageous_build_version": 11000,
 	"rulers":
 	[
 		80
 	],
 	"tab_size": 8,
-	"theme": "Boxy Monokai.sublime-theme"
+	"theme": "Boxy Monokai.sublime-theme",
+	"vintageous_use_ctrl_keys": false,
+	"vintageous_use_super_keys": false
 }
