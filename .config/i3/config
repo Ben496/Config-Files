@@ -183,7 +183,6 @@ bindsym $mod+a focus parent
 #exec_always --no-startup-id $HOME/.config/polybar/scripts/launch-polybar
 #exec_always --no-startup-id killall -q compton; compton
 #exec_always --no-startup-id killall -q polybar; polybar i3-bar
-exec_always --no-startup-id skippy-xd --start-daemon --config $HOME/.config/skippy-xd/skippy-xd.rc
 exec_always --no-startup-id dropbox start
 #exec_always --no-startup-id transmission-gtk
 
