@@ -38,6 +38,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 set smartindent
 set number
 set relativenumber
+set hid
 syntax on
 colorscheme default
 set cursorline
