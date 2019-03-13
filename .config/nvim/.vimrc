@@ -32,12 +32,12 @@ colorscheme default
 set cursorline
 set colorcolumn=80
 highlight colorcolumn ctermbg=black
-highlight cursorline cterm=NONE ctermbg=black ctermfg=darkred
+highlight cursorline cterm=NONE ctermbg=black "ctermfg=darkred
 let g:gitgutter_enabled = 1
 
 " Custom Keybinds
-inoremap " ""<left>
-inoremap ' ''<left>
+inoremap "" ""<left>
+inoremap '' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
@@ -57,3 +57,5 @@ inoremap <> <><left>
 :nnoremap <A-j> <C-w>j
 :nnoremap <A-k> <C-w>k
 :nnoremap <A-l> <C-w>l
+" shortcut to escape terminal mode easier
+:tnoremap <C-n> <C-\><C-n>
