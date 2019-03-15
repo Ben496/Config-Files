@@ -16,6 +16,7 @@ Plugin 'unblevable/quick-scope'
 Plugin 'rust-lang/rust.vim'
 Plugin 'tpope/vim-sleuth'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-surround'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
