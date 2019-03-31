@@ -37,26 +37,44 @@ highlight cursorline cterm=NONE ctermbg=black "ctermfg=darkred
 let g:gitgutter_enabled = 1
 
 " Custom Keybinds
+
+" custom patterns
 inoremap "" ""<left>
 inoremap '' ''<left>
 inoremap ( ()<left>
+inoremap () ()
+inoremap (; ();<left><left>
+" complete function definition in rust
+inoremap ({ () {<cr>}<esc>k$ba
+" complete function definition in rust with return type
+inoremap (<tab> () -> {<cr>}<esc>k$2ba
 inoremap [ []<left>
 inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
+inoremap {<cr> {<cr>}<esc>O
+inoremap {;<cr> {<cr>};<esc>O
 inoremap <> <><left>
+
 " navigate windows from any mode
-:tnoremap <A-h> <C-\><C-N><C-w>h
-:tnoremap <A-j> <C-\><C-N><C-w>j
-:tnoremap <A-k> <C-\><C-N><C-w>k
-:tnoremap <A-l> <C-\><C-N><C-w>l
-:inoremap <A-h> <C-\><C-N><C-w>h
-:inoremap <A-j> <C-\><C-N><C-w>j
-:inoremap <A-k> <C-\><C-N><C-w>k
-:inoremap <A-l> <C-\><C-N><C-w>l
-:nnoremap <A-h> <C-w>h
-:nnoremap <A-j> <C-w>j
-:nnoremap <A-k> <C-w>k
-:nnoremap <A-l> <C-w>l
+tnoremap <A-h> <C-\><C-N><C-w>h
+tnoremap <A-j> <C-\><C-N><C-w>j
+tnoremap <A-k> <C-\><C-N><C-w>k
+tnoremap <A-l> <C-\><C-N><C-w>l
+inoremap <A-h> <C-\><C-N><C-w>h
+inoremap <A-j> <C-\><C-N><C-w>j
+inoremap <A-k> <C-\><C-N><C-w>k
+inoremap <A-l> <C-\><C-N><C-w>l
+nnoremap <A-h> <C-w>h
+nnoremap <A-j> <C-w>j
+nnoremap <A-k> <C-w>k
+nnoremap <A-l> <C-w>l
+
 " shortcut to escape terminal mode easier
-:tnoremap <C-n> <C-\><C-n>
+tnoremap <C-n> <C-\><C-n>
+
+" hot editing of this file
+nnoremap <space>ev :split ~/.config/nvim/.vimrc<cr>
+nnoremap <space>sv :source %<cr>
+
+" misc
+nnoremap <C-q> :set textwidth=80<cr>
+nnoremap <C-s> :set textwidth=0<cr>
