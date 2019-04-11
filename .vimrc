@@ -71,6 +71,19 @@ nnoremap <A-h> <C-w>h
 nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
+" move windows from any mode
+:tnoremap <A-H> <C-\><C-N><C-w>H
+:tnoremap <A-J> <C-\><C-N><C-w>J
+:tnoremap <A-K> <C-\><C-N><C-w>K
+:tnoremap <A-L> <C-\><C-N><C-w>L
+:inoremap <A-H> <C-\><C-N><C-w>H
+:inoremap <A-J> <C-\><C-N><C-w>J
+:inoremap <A-K> <C-\><C-N><C-w>K
+:inoremap <A-L> <C-\><C-N><C-w>L
+:nnoremap <A-H> <C-w>H
+:nnoremap <A-J> <C-w>J
+:nnoremap <A-K> <C-w>K
+:nnoremap <A-L> <C-w>L
 " }}}
 
 " shortcut to escape terminal mode easier
