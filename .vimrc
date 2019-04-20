@@ -26,6 +26,7 @@ filetype plugin indent on    " required
 
 " My options {{{1
 " inoremap jk <ESC>
+set path+=**
 set smartindent
 set number
 set relativenumber
