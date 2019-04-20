@@ -27,6 +27,7 @@ filetype plugin indent on    " required
 " My options {{{1
 " inoremap jk <ESC>
 set path+=**
+set wildignore+=**/.git/**,**/node_modules/**
 set smartindent
 set number
 set relativenumber
