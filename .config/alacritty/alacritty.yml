@@ -387,6 +387,7 @@ live_config_reload: true
 #   - ~AppKeypad
 #   - AppKeypad
 key_bindings:
+  - { key: N,        mods: Control|Shift,    action: SpawnNewInstance    }
   - { key: V,        mods: Control|Shift,    action: Paste               }
   - { key: C,        mods: Control|Shift,    action: Copy                }
   - { key: Paste,                   action: Paste                        }
