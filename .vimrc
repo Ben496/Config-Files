@@ -44,17 +44,7 @@ let g:gitgutter_enabled = 1
 " Custom Keybinds {{{1
 
 " custom patterns {{{2
-inoremap "" ""<left>
-inoremap '' ''<left>
-inoremap ( ()<left>
-inoremap () ()
 inoremap (; ();<left><left>
-" complete function definition in rust
-inoremap ({ () {<cr>}<esc>k$ba
-" complete function definition in rust with return type
-inoremap (<tab> () -> {<cr>}<esc>k$2ba
-inoremap [ []<left>
-inoremap { {}<left>
 inoremap {<cr> {<cr>}<esc>O
 inoremap {;<cr> {<cr>};<esc>O
 inoremap <> <><left>
