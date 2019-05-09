@@ -277,7 +277,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 # decrease
 # border control
 
 hide_edge_borders both
-#bindsym $mod+shift+b exec --no-startup-id i3-msg border toggle
+bindsym $mod+shift+p border toggle
 
 #changing border style
 #bindsym $mod+n border normal
