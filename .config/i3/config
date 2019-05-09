@@ -257,6 +257,7 @@ for_window [window_role="^Preferences$"] floating enable
 for_window [class="Eom"] floating enable
 #for_window [class="Transmission-gtk"] floating enable
 for_window [class="Galculator"] floating enable
+for_window [title="Blender User Preferences"] floating enable
 
 
 
