@@ -17,6 +17,7 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'tpope/vim-sleuth'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-surround'
+Plugin 'Valloric/YouCompleteMe'
 " }}}
 
 " All of your Plugins must be added before the following line
