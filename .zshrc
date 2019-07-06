@@ -114,3 +114,6 @@ export LD_LIBRARY_PATH=/usr/local/gdb-8/lib:$LD_LIBRARY_PATH
 # android-tools
 export PATH=~/Android/Sdk/platform-tools:$PATH
 
+# Cargo bin
+export PATH=~/.cargo/bin:$PATH
+
