@@ -1,4 +1,6 @@
 {
+	"animation_enabled": false,
+	"auto_complete": true,
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
 	"font_face": "Source Code Pro for Powerline",
 	"font_size": 9,

@@ -1,5 +1,6 @@
 [
 	{ "keys": ["ctrl+shift+s"], "command": "save_all" },
 	{ "keys": ["ctrl+shift+o"], "command": "prompt_open_folder" },
-	{ "keys": ["alt+shift+o"], "command": "prompt_add_folder"}
+	{ "keys": ["alt+shift+o"], "command": "prompt_add_folder"},
+	{ "keys": ["ctrl+t"], "command": "toggle_side_bar"},
 ]
